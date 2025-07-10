@@ -317,7 +317,7 @@ body.modo-oscuro .tarjeta-proyecto a:hover {
 
   section p {
     font-size: 0.9rem;
-    text-align: left;
+    text-align: justify;
     line-height: 1.5;
   }
 }
