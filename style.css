@@ -290,3 +290,31 @@ body.modo-oscuro .tarjeta-proyecto a {
 body.modo-oscuro .tarjeta-proyecto a:hover {
   background-color: #0088cc;
 }
+
+/* Responsive para imagen y texto de presentación */
+@media (max-width: 900px) {
+  .img-presentacion-container img {
+    width: 220px;
+    height: 220px;
+  }
+  .presentacion-textos p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+  .img-presentacion-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .img-presentacion-container img {
+    width: 140px;
+    height: 140px;
+  }
+  .presentacion-textos p {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
