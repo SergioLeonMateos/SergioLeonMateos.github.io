@@ -297,7 +297,7 @@ body.modo-oscuro .tarjeta-proyecto a:hover {
     width: 220px;
     height: 220px;
   }
-  .presentacion-textos p {
+  section p {
     font-size: 1.1rem;
   }
 }
