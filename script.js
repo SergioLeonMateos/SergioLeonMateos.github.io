@@ -11,7 +11,7 @@ const proyectos = [
     nombre: "Proyecto CRUD",
     descripcion: "Página web CRUD realizada durante mis prácticas en NTT DATA. Incluye gestión completa de usuarios y tareas.",
     imagen: "https://img.icons8.com/fluency/96/database.png",
-    url: "https://github.com/SergioLeonMateos/ProyectoCRUD-NTT.git"
+    url: "https://github.com/SergioLeonMateos/ProyectoCRUD-NTT"
   },
   {
     nombre: "Segundo Proyecto",
