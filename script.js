@@ -10,12 +10,12 @@ const proyectos = [
   {
     nombre: "Proyecto CRUD",
     descripcion: "Página web CRUD realizada durante mis prácticas en NTT DATA. Incluye gestión completa de usuarios y tareas.",
-    imagen: "images/proyecto1.jpg", // Pon la ruta correcta de tu imagen o usa un placeholder
-    url: "https://github.com/sergioleonmateos/proyecto-crud"
+    imagen: "https://img.icons8.com/fluency/96/database.png",
+    url: "https://github.com/SergioLeonMateos/ProyectoCRUD-NTT.git"
   },
   {
-    nombre: "App de Tareas",
-    descripcion: "Aplicación para gestionar tareas con React y Node.js. Proyecto personal para practicar tecnologías web modernas.",
+    nombre: "Segundo Proyecto",
+    descripcion: "Segundo proyecto.",
     imagen: "images/proyecto2.jpg",
     url: "https://github.com/sergioleonmateos/app-tareas"
   }
