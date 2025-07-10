@@ -315,6 +315,6 @@ body.modo-oscuro .tarjeta-proyecto a:hover {
   }
   .presentacion-textos p {
     font-size: 1rem;
-    text-align: left;
+    text-align: justify;
   }
 }
