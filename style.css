@@ -303,21 +303,18 @@ body.modo-oscuro .tarjeta-proyecto a:hover {
 }
 
 /* Responsive para móviles */
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
   .img-presentacion-container {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
-
   .img-presentacion-container img {
     width: 140px;
     height: 140px;
   }
-
-  section p {
-    font-size: 0.9rem;
-    text-align: justify;
-    line-height: 1.5;
+  .presentacion-textos p {
+    font-size: 1rem;
+    text-align: left;
   }
 }
