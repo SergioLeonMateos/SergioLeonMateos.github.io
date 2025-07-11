@@ -9,13 +9,11 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f5f5f5;
   color: #333;
-  margin: 0;
-  padding: 0;
   line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ==== IMAGEN DE PRESENTACIÓN ==== */
-
 .img-presentacion-container {
   display: flex;
   align-items: center;
@@ -27,7 +25,7 @@ body {
   width: 500px;
   height: 500px;
   object-fit: cover;
-  border-radius: 10px; /* Opcional: bordes redondeados */
+  border-radius: 10px;
   flex-shrink: 0;
 }
 
@@ -37,7 +35,7 @@ body {
 
 /* ==== HEADER ==== */
 header {
-  background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,8 +45,6 @@ header {
   font-size: 1.5rem;
   position: relative;
   overflow: hidden;
- 
-  /* Parallax */
   background-attachment: fixed;
 }
 
@@ -65,7 +61,7 @@ header > * {
   z-index: 1;
 }
 
-/* Responsive: en móvil desactiva el parallax para evitar problemas */
+/* Responsive para móviles */
 @media (max-width: 768px) {
   header {
     background-attachment: scroll;
@@ -86,12 +82,14 @@ nav a {
   transition: color 0.3s ease;
 }
 
-nav a:hover {
-  color: #ffcc00; /* Cambia a amarillo en hover */
-  text-decoration: none; /* Sin subrayado */
+nav a:hover,
+nav a:focus {
+  color: #ffcc00;
+  outline: none;
+  text-decoration: none;
 }
 
-/* ==== TEMA BUTTON ==== */
+/* ==== BOTÓN TEMA ==== */
 #theme-toggle {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
@@ -104,11 +102,13 @@ nav a:hover {
   transition: background-color 0.3s ease;
 }
 
-#theme-toggle:hover {
+#theme-toggle:hover,
+#theme-toggle:focus {
   background-color: #ffffff55;
+  outline: none;
 }
 
-/* ==== MAIN SECTIONS ==== */
+/* ==== MAIN ==== */
 main {
   padding: 2rem 1rem;
 }
@@ -126,16 +126,16 @@ section h2 {
   border-bottom: 2px solid #007bff;
   padding-bottom: 0.5rem;
   margin-top: 0;
-
 }
 
 section p {
-   text-align: justify;
-  font-size: 1.3rem; /* Antes: 1.1rem */
+  text-align: justify;
+  font-size: 1.3rem;
   margin-top: 0.5rem;
   line-height: 1.6;
-
 }
+
+
 
 /* ==== FOOTER ==== */
 footer {
@@ -144,6 +144,7 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
   color: #555;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ==== MODO OSCURO ==== */
@@ -160,9 +161,10 @@ body.modo-oscuro nav a {
   color: #eee;
 }
 
-body.modo-oscuro nav a:hover {
+body.modo-oscuro nav a:hover,
+body.modo-oscuro nav a:focus {
   color: #ffcc00;
-  text-decoration: none;
+  outline: none;
 }
 
 body.modo-oscuro #theme-toggle {
@@ -177,6 +179,16 @@ body.modo-oscuro section h2 {
 body.modo-oscuro footer {
   background-color: #333;
   color: #ccc;
+}
+
+.github-logo-oscuro {
+  display: none;
+}
+body.modo-oscuro .github-logo-claro {
+  display: none;
+}
+body.modo-oscuro .github-logo-oscuro {
+  display: inline;
 }
 
 /* ==== REDES SOCIALES ==== */
@@ -196,8 +208,10 @@ body.modo-oscuro footer {
   vertical-align: middle;
 }
 
-.redes-sociales a:hover img {
+.redes-sociales a:hover img,
+.redes-sociales a:focus img {
   transform: scale(1.15);
+  outline: none;
 }
 
 /* ==== PROYECTOS ==== */
@@ -219,10 +233,11 @@ body.modo-oscuro footer {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tarjeta-proyecto:hover {
+.tarjeta-proyecto:hover,
+.tarjeta-proyecto:focus-within {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
@@ -262,14 +277,17 @@ body.modo-oscuro footer {
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tarjeta-proyecto a:hover {
+.tarjeta-proyecto a:hover,
+.tarjeta-proyecto a:focus {
   background-color: #0056b3;
+  box-shadow: 0 0 8px #007bff;
+  outline: none;
 }
 
-/* Adaptación modo oscuro */
+/* ==== MODO OSCURO TARJETAS ==== */
 body.modo-oscuro .tarjeta-proyecto {
   background-color: #2c2c2c;
   box-shadow: 0 4px 10px rgba(255,255,255,0.1);
@@ -287,11 +305,15 @@ body.modo-oscuro .tarjeta-proyecto a {
   background-color: #00aaff;
 }
 
-body.modo-oscuro .tarjeta-proyecto a:hover {
+body.modo-oscuro .tarjeta-proyecto a:hover,
+body.modo-oscuro .tarjeta-proyecto a:focus {
   background-color: #0088cc;
+  box-shadow: 0 0 8px #00aaff;
 }
 
-/* Responsive para imagen y texto de presentación */
+/* ==== RESPONSIVE ==== */
+
+/* Imagen y texto presentación */
 @media (max-width: 900px) {
   .img-presentacion-container img {
     width: 220px;
@@ -302,7 +324,7 @@ body.modo-oscuro .tarjeta-proyecto a:hover {
   }
 }
 
-/* Responsive para móviles */
+/* Móvil */
 @media (max-width: 600px) {
   .img-presentacion-container {
     flex-direction: column;
@@ -312,6 +334,9 @@ body.modo-oscuro .tarjeta-proyecto a:hover {
   .img-presentacion-container img {
     width: 140px;
     height: 140px;
+  }
+  .img-presentacion-container .presentacion-textos {
+    text-align: center;
   }
   .presentacion-textos p {
     font-size: 1rem;

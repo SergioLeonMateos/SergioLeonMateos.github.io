@@ -1,8 +1,10 @@
-// script.js
 const btn = document.getElementById("theme-toggle");
 
+
 btn.addEventListener("click", () => {
-  document.body.classList.toggle("modo-oscuro");
+  const modoOscuroActivo = document.body.classList.toggle("modo-oscuro");
+  
+  btn.setAttribute("aria-pressed", modoOscuroActivo);
 });
 
 // Array de proyectos
@@ -14,12 +16,12 @@ const proyectos = [
     url: "https://github.com/SergioLeonMateos/ProyectoCRUD-NTT"
   },
   {
-    nombre: "Segundo Proyecto",
-    descripcion: "Segundo proyecto.",
-    imagen: "images/proyecto2.jpg",
-    url: "https://github.com/sergioleonmateos/app-tareas"
+    nombre: "CatalogoApp",
+    descripcion: "Segundo proyecto realizado en el curso de OpenWebinars. Aplicación web para gestionar un catálogo de productos.",
+    imagen: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80",
+    url: "https://github.com/sergioleonmateos/CatalogoApp"
   }
-  // Puedes añadir más objetos con tus proyectos aquí
+  //... Proximos proyectos se pueden añadir aquí
 ];
 
 function cargarProyectos() {
