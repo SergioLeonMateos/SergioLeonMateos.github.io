@@ -57,13 +57,13 @@ const entradasBlog = [
       <span class="blog-fecha">16/09/2025</span>
       <p>Durante ocho años trabajé como mozo de almacén. Era un empleo estable, que me permitía conciliar mi vida personal con la laboral, pero con el tiempo empecé a pensar que quería otra cosa para mi futuro. Con 31 años decidí dar el paso y volver a estudiar, aunque eso significara cambiar mi rutina, viajar cada día desde Cáceres a Navalmoral de la Mata para ir al instituto y enfrentarme de nuevo a las aulas después de tanto tiempo.</p>
       <p>Cuando hice la matrícula, mi primera opción fue DAM (Desarrollo de Aplicaciones Multiplataforma). Sin embargo, solo quedaba plaza en DAW (Desarrollo de Aplicaciones Web), así que empecé por ahí. El primer curso es común, lo que me permitió avanzar sin perder el rumbo, pero siempre tuve claro hacia dónde quería ir. Este año por fin he conseguido el traslado a DAM.</p>
-      <h4>¿Por qué elegí DAM?</h4>
+      <h3>¿Por qué elegí DAM?</h3>
       <ul>
         <li><strong>Proyección laboral:</strong> en la formación dual del año pasado participé en cursos con NTT Data, y ahí vi que el perfil de DAM tiene mucha salida en el sector tecnológico.</li>
         <li><strong>Más posibilidades:</strong> DAM abre la puerta a trabajar en proyectos que no se limitan solo a la web, sino que también abarcan aplicaciones en distintos dispositivos.</li>
         <li><strong>Motivación personal:</strong> me interesa más este camino porque siento que encaja mejor con lo que me gusta y con el futuro profesional que quiero construir.</li>
       </ul>
-      <h4>Una decisión que va más allá de los estudios</h4>
+      <h3>Una decisión que va más allá de los estudios</h3>
       <p>Para mí no es solo cambiar de DAW a DAM. Es haber decidido dar un giro a mi vida, dejar atrás la comodidad de lo que ya conocía y apostar por un futuro con más oportunidades. No ha sido fácil, pero cada paso confirma que tomé la decisión correcta.</p>
       <button id="volver-blog">Volver</button>
     `
