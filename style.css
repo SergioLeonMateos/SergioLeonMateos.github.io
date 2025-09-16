@@ -13,6 +13,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+
 /* ==== IMAGEN DE PRESENTACIÓN ==== */
 .img-presentacion-container {
   display: flex;
@@ -149,6 +150,73 @@ section p {
   gap: 1rem;
   margin-top: 0.5rem;
 }
+
+
+/* === BLOG TARJETAS Y DETALLE === */
+.blog-tarjeta {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.blog-tarjeta h3 {
+  margin: 0;
+  color: #007bff;
+  font-size: 1.25rem;
+}
+
+.blog-fecha {
+  font-size: 0.95rem;
+  color: #888;
+}
+
+.ver-mas, #volver-blog {
+  align-self: flex-start;
+  background-color: #007bff;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.ver-mas:hover, #volver-blog:hover {
+  background-color: #0056b3;
+}
+
+/* Igualar tamaño y fuente de texto en blog */
+#blog p,
+#blog ul,
+#blog li {
+  font-size: 1.3rem;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: inherit;
+  text-align: justify;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#blog ul {
+  margin-left: 1.5rem;
+}
+
+#blog h3, #blog h4 {
+  font-family: 'Segoe UI', sans-serif;
+}
+/* === FIN BLOG === */
+
+
 
 
 /* ==== FOOTER ==== */
